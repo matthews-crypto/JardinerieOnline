@@ -1,0 +1,28 @@
+#d1 {
+    background-color: rgb(122, 72, 89);
+    color: white;
+    font-size: 40px;
+    font-family: arial;
+    text-align: center;
+}
+
+#nnavbar {
+    background-color: rgb(157, 224, 157);
+}
+
+#imageLogo {
+    width: 100px;
+    border-radius: 50px;
+}
+
+
+/* img {
+    padding: 10px;
+    height: 140px;
+    border-radius: 40px;
+    width: 180px;
+} */
+
+img:hover {
+    transform: scale(1.1);
+}
