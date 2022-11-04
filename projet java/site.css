@@ -1,28 +1,164 @@
-#d1 {
-    background-color: rgb(122, 72, 89);
-    color: white;
-    font-size: 40px;
-    font-family: arial;
-    text-align: center;
+/* css barre de navigation gerer par boostrap */
+
+#navbar {
+    background-color: rgb(97, 103, 97);
 }
 
-#nnavbar {
-    background-color: rgb(157, 224, 157);
-}
+
+/* taille et forme du logo */
 
 #imageLogo {
-    width: 100px;
+    width: 80px;
     border-radius: 50px;
 }
 
 
-/* img {
-    padding: 10px;
-    height: 140px;
-    border-radius: 40px;
-    width: 180px;
-} */
+/* end css barre de navigation */
 
-img:hover {
+
+/*css carousel */
+
+.mySlides {
+    display: none;
+}
+
+.numbertext>img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+/* fin css carousel */
+
+#imageProduit>div:hover {
     transform: scale(1.1);
+}
+
+
+/* la police de bienvenue chez amsa */
+
+@font-face {
+    font-family: charmona;
+    src: url(fontFamily/charmonman/Charmonman-Bold.ttf);
+    font-weight: bold;
+}
+
+
+/* css des images de l'acceuil */
+
+#imageProduit div>img {
+    width: 350px;
+    border-radius: 40px;
+}
+
+#imageProduit {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+#imageProduit>div {
+    height: 500px;
+    background-color: rgb(97, 103, 97);
+    border-radius: 40px;
+    margin-bottom: 50px;
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 350px;
+}
+
+.produit>div {
+    align-self: center;
+}
+
+.produit div>p {
+    margin-left: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.price {
+    margin-left: 155px;
+    color: white;
 }
