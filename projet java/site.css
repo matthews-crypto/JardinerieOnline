@@ -1,109 +1,50 @@
 /* css barre de navigation gerer par boostrap */
 
 #navbar {
-    background-color: rgb(97, 103, 97);
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+}
+
+#bienvenue {
+    background-color: white;
+    text-align: center;
+    font-family: charmona;
+    height: 70px;
+}
+
+#bg1 {
+    width: 100%;
+    height: 430px;
+}
+
+#numTel {
+    border: 2px solid;
+    border-radius: 50px;
+    width: 120%;
+    text-align: center;
 }
 
 
 /* taille et forme du logo */
 
+.liste li>a {
+    color: black;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
 #imageLogo {
-    width: 80px;
+    width: 186px;
     border-radius: 50px;
+    position: absolute;
+    left: 85px;
+    padding-top: 20%;
+    bottom: 30%;
+    left: 42%;
 }
 
 
 /* end css barre de navigation */
-
-
-/*css carousel */
-
-.mySlides {
-    display: none;
-}
-
-.numbertext>img {
-    vertical-align: middle;
-}
-
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-
-/* Caption text */
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-
-/* The dots/bullets/indicators */
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
-}
-
-
-/* Fading animation */
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-
-/* On smaller screens, decrease text size */
-
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-
-
-/* fin css carousel */
 
 #imageProduit>div:hover {
     transform: scale(1.1);
@@ -134,8 +75,8 @@
 }
 
 #imageProduit>div {
-    height: 500px;
-    background-color: rgb(97, 103, 97);
+    height: 350px;
+    background-color: #67676735;
     border-radius: 40px;
     margin-bottom: 50px;
 }
@@ -152,13 +93,14 @@
     align-self: center;
 }
 
-.produit div>p {
-    margin-left: 15px;
+.produit>p {
+    text-align: center;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 
 .price {
-    margin-left: 155px;
-    color: white;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
