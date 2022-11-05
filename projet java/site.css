@@ -1,21 +1,30 @@
-/* css barre de navigation gerer par boostrap */
+/* Navbar */
 
 #navbar {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(210, 210, 210);
     height: 150px;
 }
 
+
+/* Bienvenue chez amsa css */
+
 #bienvenue {
-    background-color: white;
+    background-color: rgb(210, 210, 210);
     text-align: center;
     font-family: charmona;
     height: 70px;
 }
 
+
+/* image 1 de l'acceuil qui suit la navbar */
+
 #bg1 {
     width: 100%;
     height: 430px;
 }
+
+
+/* le numero de telephone au niveau de la navbar */
 
 #numTel {
     border: 2px solid;
@@ -25,13 +34,16 @@
 }
 
 
-/* taille et forme du logo */
+/* css des elements de la navbar */
 
 .liste li>a {
     color: black;
     font-size: 20px;
     margin-top: 50px;
 }
+
+
+/* taille et forme du logo */
 
 #imageLogo {
     width: 186px;
@@ -53,6 +65,9 @@
 
 /* la police de bienvenue chez amsa */
 
+
+/* font face permet d'importer une nouvelle police  */
+
 @font-face {
     font-family: charmona;
     src: url(fontFamily/charmonman/Charmonman-Bold.ttf);
@@ -60,47 +75,195 @@
 }
 
 
-/* css des images de l'acceuil */
+/* css des boutons de defilements */
 
-#imageProduit div>img {
-    width: 350px;
-    border-radius: 40px;
+button:hover span {
+    width: 100%;
 }
 
-#imageProduit {
+button:hover {
+    border: none;
+}
+
+
+/* css des images produits */
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.product-container {
+    padding: 0 10vw;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
-#imageProduit>div {
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
     height: 350px;
-    background-color: #67676735;
-    border-radius: 40px;
-    margin-bottom: 50px;
+    overflow: hidden;
 }
 
-.produit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    max-width: 350px;
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.produit>div {
-    align-self: center;
+.discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
 }
 
-.produit>p {
-    text-align: center;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+}
+
+.product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand {
+    text-transform: uppercase;
+}
+
+.product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
 }
 
 .price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
 }
