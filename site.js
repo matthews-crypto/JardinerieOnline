@@ -44,3 +44,18 @@ const darkMode = document.getElementById('dark-mode');
 darkMode.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 });
+
+// bouton like
+// selection de la classe des icones NB:sachant que c'est une classe elles seront mise dans un tableau. 
+var li = document.querySelectorAll('.fa-regular');
+
+// boucle qui permet de parcourir le tableau des icones ci dessus. 
+for (var i = 0; i < li.length; i++) {
+    // ecouteur d'evenement au clic qui execute la fonction
+    li[i].onclick = function(e) {
+        // e.target permet de cibler l'icone du tableau qui a declenché l'evenement onclick vu que nous avons un tableau
+        // className change le nom de classe qui existe deja au niveau de l'icone ciblé
+        e.target.className = 'fa-solid fa-heart';
+    }
+}
+// fin du like icone

@@ -516,5 +516,19 @@ button:hover {
     color: black;
 }
 
+.dark .fa-heart {
+    color: #09FBBA;
+}
+
 
 /* end mode nuit */
+
+
+/* bouton de like */
+
+.fa-heart {
+    color: #ff7d7d
+}
+
+
+/* end bouton de like */
